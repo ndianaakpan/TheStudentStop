@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -415,12 +416,95 @@
             </objects>
             <point key="canvasLocation" x="1742.0289855072465" y="65.625"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Qx3-bx-NS1">
+            <objects>
+                <viewController id="B3V-bM-Yic" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rXr-yA-Spq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gWi-vi-Ag8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3xm-0t-KdE">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yd-RA-GS0">
+                                                <rect key="frame" x="59" y="52" width="297" height="59"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Daily Survey">
+                                                        <attributes>
+                                                            <font key="NSFont" size="36" name="Futura-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1. How stressed did you feel today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Bs-rS-ZLD">
+                                                <rect key="frame" x="73" y="142" width="297" height="61"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2. How burnt out do you feel today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MT3-YT-5Dy">
+                                                <rect key="frame" x="72" y="424" width="271" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.  How did you feel throughout most of the day?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAx-mk-V9b">
+                                                <rect key="frame" x="73" y="629" width="313" height="53"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1500" id="H1C-1c-12v"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3xm-0t-KdE" secondAttribute="bottom" id="DZK-eo-UW0"/>
+                                    <constraint firstAttribute="trailing" secondItem="3xm-0t-KdE" secondAttribute="trailing" id="VIA-No-zdJ"/>
+                                    <constraint firstItem="3xm-0t-KdE" firstAttribute="top" secondItem="gWi-vi-Ag8" secondAttribute="top" id="axN-CD-8pX"/>
+                                    <constraint firstItem="3xm-0t-KdE" firstAttribute="leading" secondItem="gWi-vi-Ag8" secondAttribute="leading" id="hlp-pS-HBX"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dS3-dq-Xnq"/>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.96862745100000003" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3xm-0t-KdE" firstAttribute="height" secondItem="rXr-yA-Spq" secondAttribute="height" multiplier="1.67411" id="9Ba-KD-DAj"/>
+                            <constraint firstItem="gWi-vi-Ag8" firstAttribute="trailing" secondItem="dS3-dq-Xnq" secondAttribute="trailing" id="B19-Gl-V2r"/>
+                            <constraint firstItem="gWi-vi-Ag8" firstAttribute="top" secondItem="rXr-yA-Spq" secondAttribute="top" id="IoE-YQ-l7r"/>
+                            <constraint firstItem="3xm-0t-KdE" firstAttribute="width" secondItem="rXr-yA-Spq" secondAttribute="width" id="OYt-zg-TzT"/>
+                            <constraint firstItem="gWi-vi-Ag8" firstAttribute="leading" secondItem="dS3-dq-Xnq" secondAttribute="leading" id="RSb-8Q-2qg"/>
+                            <constraint firstAttribute="bottom" secondItem="gWi-vi-Ag8" secondAttribute="bottom" id="hou-dK-L1t"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="896"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SuH-Ui-bAQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2601.449275362319" y="75.669642857142847"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="aRm-Xc-ou0"/>
-        <segue reference="6po-9H-aXA"/>
+        <segue reference="ofZ-ru-5Fm"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="500" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
