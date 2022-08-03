@@ -68,6 +68,10 @@
                                     <segue destination="e0q-j8-xgg" kind="show" id="aRm-Xc-ou0"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="p18-GX-WPc">
+                                <rect key="frame" x="107" y="271" width="201" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.98431372549019602" green="0.96862745098039216" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -416,4 +420,7 @@
         <segue reference="aRm-Xc-ou0"/>
         <segue reference="6po-9H-aXA"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Image" width="500" height="500"/>
+    </resources>
 </document>
