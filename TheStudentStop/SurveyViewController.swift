@@ -9,6 +9,7 @@ import UIKit
 
 class SurveyViewController: UIViewController {
 
+    @IBOutlet weak var Q1: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,4 +28,10 @@ class SurveyViewController: UIViewController {
     */
 
     
+    @IBAction func Button1(_ sender: Any) {
+            Q1.text = "Get at least 8 hours of sleep"
+    }
+    
+    
+
 }
